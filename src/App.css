@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Center the Main Container */
+.main-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Search Bar */
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 15px;
+  background-color: #1e1e2e;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Search Button */
+button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Album Card Layout */
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Album Cards */
+.animated-card {
+  background: linear-gradient(135deg, 
+  #090116, #100024);
+  border-radius: 4px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Album Image */
+.animated-card img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+/* Album Title */
+.animated-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Album Release Date */
+.animated-card .card-text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Album Link Button */
+.animated-card .btn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.animated-card .btn:hover {
+  background-color: black;
+  color: 
+  #9782e1;
+}
+
+/* Animations */
+@keyframes gradientAnimation {
+  
+  100% {
+    background: linear-gradient(45deg, #100024, #1d1f3e);
+  }
+}
